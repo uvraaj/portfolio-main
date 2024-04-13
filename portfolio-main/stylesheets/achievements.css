@@ -1,0 +1,462 @@
+.achievements {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin-left: 11%;
+    align-items: center;
+}
+
+.achievements-left {
+    margin-top: 45px;
+    width: 400px;
+    position: absolute;
+    z-index: 1;
+    height: 580px;
+}
+
+.achievements-content,
+.achievements-head,
+.achievements-left {
+    display: flex;
+    flex-direction: column
+}
+
+.achievements-headline {
+    display: flex;
+    font-family: futuramedium, serif;
+    margin-left: 20px
+}
+
+.achievements-headline>h1 {
+    font-weight: 400;
+    font-size: 120px;
+    letter-spacing: 5px
+}
+
+.achievements-content {
+    margin-left: 20px;
+    font-family: futuraLight, serif;
+    width: 450px
+}
+
+.achievements-info {
+    font-size: 19px;
+    width: 92%;
+    text-align: left;
+    margin-bottom: 12px
+}
+
+.achievements-tab {
+    width: 84%;
+}
+
+.achievements-panel {
+    background-color: #5b253a;
+    padding: 16px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 10px 5px 0 rgba(0, 0, 0, .1);
+    color: #ff404d !important;
+    margin-bottom: 12px;
+}
+
+.achievements-panel:hover {
+    background-color: #62283e;
+}
+
+.achievements-panel .achievements-panel-title {
+    font-family: 'futuramedium', monospace;
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.achievements-panel .achievements-panel-info {}
+
+.achievements-panel .achievements-panel-info .achievements-list {
+    align-items: flex-start;
+    margin: 0;
+}
+
+.achievements-list .achievements-item {
+    font-size: 18px;
+    font-family: 'futuraBook', monospace;
+}
+
+.achievements-item span {
+    font-size: 200%;
+}
+
+.achievements-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 46%;
+    z-index: 0;
+    margin-bottom: 55px
+}
+
+.achievements-up {
+    width: 100%;
+    height: 180px;
+    display: none
+}
+
+.achievements-rating {
+    width: 100%;
+    height: 100px;
+    display: none
+}
+
+.achievements-up-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.up-grid-layout {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 30px;
+    color: #fff
+}
+
+.up-grid-layout .achievement-logo {
+    width: 60px;
+    height: 60px
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 13px !important;
+    height: 13px !important;
+    margin: 9px 8px !important;
+    background-color: #fff !important
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: transparent !important;
+    border: 4px solid #ff3e55 !important;
+    margin: 5px 4px !important
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 5px !important
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-gap: 45px;
+    color: #fff
+}
+
+.grid-item {
+    flex-direction: column;
+    margin: 0 15px
+}
+
+.grid-item,
+.achievement-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.achievement-logo {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.passed {
+    background-color: #ff3e55;
+    box-shadow: 5px 10px 4px rgba(0, 0, 0, .1)
+}
+
+.achievement-logo>i {
+    font-size: 55px
+}
+
+.achievement-logo>img {
+    width: 50px;
+    height: 50px
+}
+
+.achievement-title {
+    color: #f7f6f5;
+    font-family: futuramedium, serif;
+    margin-top: 7px;
+    font-size: 15px;
+    cursor: default;
+}
+
+@media screen and (max-width:1200px) {
+    .achievements-right {
+        left: 48%
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .achievements {
+        margin-left: 9%
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .grid-layout {
+        grid-template-columns: 95px 95px 95px 95px;
+        grid-gap: 35px
+    }
+
+    .achievements-right {
+        left: 50%
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .achievements-info {
+        width: 80%
+    }
+
+    .achievements-tab {
+        width: 80%;
+    }
+
+    .achievements-headline>h1 {
+        font-size: 115px
+    }
+
+    .achievements-right {
+        left: 49%
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .achievements {
+        margin-left: 4%
+    }
+
+    .achievements-right {
+        left: 48%
+    }
+}
+
+@media screen and (max-width:940px) {
+    .achievement-logo {
+        width: 65px;
+        height: 65px
+    }
+
+    .achievement-logo>img {
+        width: 46px !important;
+        height: 46px !important
+    }
+
+    .achievement-logo>svg {
+        width: 45px !important;
+        height: 45px !important
+    }
+
+    .achievement-logo>i {
+        font-size: 51px
+    }
+
+    .achievements-info {
+        font-size: 19px;
+        letter-spacing: 2px
+    }
+
+    .achievements-tab {
+        width: 72%;
+    }
+
+    .achievements-right {
+        left: 47%
+    }
+}
+
+@media screen and (max-width:900px) {
+    .achievement-title {
+        margin-top: 6px;
+        font-size: 13px
+    }
+
+    .grid-layout {
+        grid-gap: 30px
+    }
+
+    .achievements-headline>h1 {
+        font-size: 110px
+    }
+}
+
+@media screen and (max-width:850px) {
+    .achievements-right {
+        display: none
+    }
+
+    .achievements {
+        flex-direction: column;
+        margin: 0
+    }
+
+    .achievements-left {
+        width: 100%;
+        position: static;
+        margin-top: 0;
+        padding-left: 42px;
+        z-index: 0;
+        height: auto;
+    }
+
+    .achievements-up {
+        display: flex;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+
+    .achievements-rating {
+        display: flex;
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .achievements-headline>h1 {
+        font-size: 70px
+    }
+
+    .achievements-content,
+    .achievements-info {
+        width: 90%
+    }
+}
+
+@media screen and (max-width:700px) {
+    .achievements-left {
+        margin-top: 10px
+    }
+}
+
+@media screen and (max-width:500px) {
+    .up-grid-layout .achievement-logo {
+        width: 53px;
+        height: 53px
+    }
+
+    .up-grid-layout {
+        grid-gap: 20px
+    }
+
+    .achievement-logo>img {
+        width: 43px !important;
+        height: 43px !important
+    }
+
+    .achievement-logo>i {
+        font-size: 46px
+    }
+
+    .achievement-logo>svg {
+        width: 43px !important;
+        height: 43px !important
+    }
+
+    .achievements-headline>h1 {
+        font-size: 65px
+    }
+
+    .achievements-info {
+        font-size: 18px
+    }
+
+    .achievements-left {
+        margin-top: 0
+    }
+}
+
+@media screen and (max-width:420px) {
+    .up-grid-layout .achievement-logo {
+        width: 50px;
+        height: 50px
+    }
+
+    .achievement-title {
+        font-size: 12px
+    }
+
+    .up-grid-layout {
+        grid-gap: 16px
+    }
+
+    .achievements-left {
+        margin-top: -8px;
+        padding-left: 37px
+    }
+}
+
+@media screen and (max-width:390px) {
+    .achievements-headline {
+        margin-left: 15px
+    }
+
+    .achievements-headline>h1 {
+        font-size: 62px
+    }
+
+    .achievements-content {
+        margin-left: 15px
+    }
+
+    .achievements-info {
+        letter-spacing: 1px
+    }
+
+    .up-grid-layout {
+        grid-gap: 14px
+    }
+}
+
+@media screen and (max-width:374px) {
+    .up-grid-layout .achievement-logo {
+        width: 45px;
+        height: 45px
+    }
+
+    .up-grid-layout {
+        grid-gap: 12px
+    }
+
+    .achievements-left {
+        margin-top: -27px
+    }
+}
+
+@media screen and (min-height:630px) and (orientation:portrait) {
+    .achievements-headline>h1 {
+        font-size: 45px
+    }
+
+    .achievements-left {
+        margin-top: -38px
+    }
+
+    .up-grid-layout {
+        grid-gap: 8px
+    }
+}
+
+@media screen and (min-height:740px) and (orientation:portrait) {
+    .achievements-left {
+        margin-top: -15px
+    }
+
+    .achievements-content {
+        margin-top: 20px
+    }
+}
